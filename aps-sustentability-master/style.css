@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem 0;
+}
+
+.navbar li {
+    list-style-type: none;
+    margin-right: 8px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+header img {
+    width: 90px;
+    height: 60px;
+}
+
+main {
+    max-height: 1500px;
+    font-size: 1.5em;
+
+}
+
+.container {
+    width: 600px;
+    cursor: pointer;
+
+}
+
+.faq-question::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+}
+
+.faq-question.active::after {
+    transform: rotate(0deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faq-answer.active {
+    max-height: 1200px;
+}
+
+dd div {
+    background-color: #ecebeb9f;
+}
+
+.accordion-item{
+    max-width: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+main.donations_wrapper {
+  margin: 0 6rem;
+}
+
+main.donations_wrapper p {
+  font-size: 14px;
+}
+
+form {
+  width: 600px;
+  margin-left: 2.4rem;
+}
+
+input {
+  width: 100%;
+}
+
+div > label {
+  display: flex;
+}
+
+div > label:not(:last-child) {
+  margin-top: 16px;
+}
+
+.form_submit-btn {
+  margin-top: 22px;
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+
+  background-color: #57d326;
+}
+
+.form_submit-btn a {
+  color: #fff;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 4px;
+}

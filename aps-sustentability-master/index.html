@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heróis dos Lacres</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <ul class="d-flex align-items-center justify-content-end">
+      <li><a href="/" class="text-decoration-none text-white-50">Página Inicial</a></li>
+      <li><a href="/donations.html" class="text-decoration-none text-white-50">Como colaborar?</a></li>
+      <li><a href="/about.html" class="text-decoration-none text-white-50">Sobre</a></li>
+    </ul>
+  </nav>
+  <section class="d-flex flex-column align-items-center mt-5">
+    <div>
+      <img
+        src="data:image/png;base64,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"
+        alt="" class="rounded-circle mb-4">
+    </div>
+    <div class="text-center">
+      <h1 class="text-black">Heróis dos Lacres</h1>
+      <span>Arrecadando lacres para ajudar vidas</h3>
+    </div>
+  </section>
+
+
+  <hr />
+
+  <section class="d-flex flex-column align-items-center py-3">
+    <h4 class="mb-4">Veja a iniciativa em alguns lugares de destaque:</h2>
+      <iframe
+        src="https://cbn.globoradio.globo.com/Player/widget.htm?audio=3/2021/08/26/351135_20210826&url=https://cbn.globoradio.globo.com/media/audio/351135/projeto-transforma-lacres-de-latinhas-em-cadeiras-.htm&titulo=Projeto%20transforma%20lacres%20de%20latinhas%20em%20cadeiras%20de%20rodas&cat=CBN%20S%C3%A3o%20Paulo%20-%20Entrevista"
+        width="600" height="220" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+  </section>
+  <hr />
+
+  <section class="mb-5 d-flex flex-column py-3">
+    <h4 class="text-center mb-4">Ainda possuí alguma dúvida com relação ao projeto?</h2>
+      <dl class="container text-center mb-5 mx-auto">
+        <dt class="faq-question mt-3 bg-light border-bottom d-sm-3">
+          <h4>O que é Sustentabilidade</h2>
+        </dt>
+        <dd class="faq-answer mt-2 ">
+          <div>
+            <p>
+              Sustentabilidade é um conceito relacionado à conservação ou à manutenção de um cenário no longo prazo, de
+              modo a lidar bem com possíveis ameaças.
+
+              No aspecto ambiental, em que o termo é empregado com frequência, a sustentabilidade faz referência a um
+              planeta sadio, no qual as pessoas possam encontrar as condições necessárias para a sobrevivência, de
+              geração em geração.
+            </p>
+          </div>
+        </dd>
+        <dt class="faq-question mt-3 bg-light border-bottom ">
+          <h4>Vantagens Universais</h2>
+        </dt>
+        <dd class="faq-answer mt-2 ">
+          <div>
+            <p>
+              Melhora da qualidade de vida
+              Preservação da biodiversidade e dos recursos naturais
+              Diminuição dos desastres ambientais
+              Adoção de hábitos mais saudáveis e conscientes
+              Empresas mais responsáveis socialmente
+              Redução da desigualdade social e de todas as formas de preconceito
+              Segurança alimentar
+              Melhora da economia devido à ecoeficiência.
+            </p>
+          </div>
+        </dd>
+        <dt class="faq-question mt-3 bg-light border-bottom ">
+          <h4>Lacres de latinha</h4>
+        </dt>
+        <dd class="faq-answer mt-2 ">
+          <div>
+            <p>
+              Sabe aquela pequena peça de alumínio das latinhas de refrigerantes e sucos? Pouco perceptível no dia a dia, os lacres de alumínio podem ser considerados lixo para muita gente, mas o que poucos sabem é que essa pequena peça  pode se tornar uma grande oportunidade de mobilidade para muitas pessoas.
+            </p>
+          </div>
+        </dd>
+        <dt class="faq-question mt-3 bg-light border-bottom ">
+          <h4>Ainda estou com dúvidas</h4>
+        </dt>
+        <dd class="faq-answer mt-2 ">
+          <div>
+            <p>
+              Se caso ainda estiver com alguma dúvida com relação ao nosso projeto, você pode enviar uma mensagem para nosso email: <a href="mailto:lacredobemermelino@gmail.com">lacredobemermelino@gmail.com</a>
+            </p>
+          </div>
+        </dd>
+      </dl>
+      </main>
+      <footer class="bg-white position-relative bottom-0 left-0 right-0 mt-5 p-4 border-top border-darkat">
+        <div class="d-flex justify-content-between">
+          <div>
+            <span>©Alan ©Dante ©Duda ©Matheus</span>
+          </div>
+          <div>
+            <a target="_blank" href="https://www.instagram.com/heroisdoslacres/" class="m-2">
+              <img src="./assets/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a target="_blank" href="https://web.facebook.com/heroisdoslacres/">
+              <img src="./assets/icons/facebook.svg" alt="Facebook">
+            </a>
+          </div>
+        </div>
+        <div class="text-center">
+          <p>
+            Feito especialmente para a APS 1º Sementre de Ciência da Computação na Universidade Paulista - Unip Bauru
+          </p>
+        </div>
+      </footer>
+</body>
+<script src="js.js"></script>
+
+</html>
